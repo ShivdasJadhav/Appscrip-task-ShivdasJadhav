@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Appscrip Store - Assignment by Shivdas Jadhav
 
-## Getting Started
+Welcome to the official submission repository for the **Appscrip Frontend Development Assignment**. This project demonstrates a responsive, user-friendly storefront built using **Next.js**, showcasing both technical skill and attention to design detail.
 
-First, run the development server:
+## 🌐 Live Demo
 
+👉 [View the Deployed Project on Netlify](https://appscrip-task-shivdasjadhav.netlify.app/)  
+👉 [Explore the Code on GitHub](https://github.com/ShivdasJadhav/Appscrip-task-ShivdasJadhav)
+
+---
+
+## 📌 Project Overview
+
+This is a minimal yet fully functional e-commerce frontend, carefully crafted to fulfill the assignment requirements while maintaining scalability and readability. Key areas of focus include:
+
+- Clean and semantic component structure
+- Fully responsive design (mobile, tablet & desktop)
+- State-driven interactivity
+- Accessible and scalable styling using **CSS Modules**
+- Optimized image handling with **Next.js Image**
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology   | Role                                  |
+|--------------|----------------------------------------|
+| **Next.js**  | React framework for SSR and routing    |
+| **React.js** | Core frontend UI library               |
+| **CSS Modules** | Scoped component-level styling     |
+| **Lucide Icons** | Icon system for clean UI           |
+| **Netlify**  | Deployment and hosting                 |
+
+---
+
+## 💡 Features
+
+- ✅ Responsive Navbar with Hamburger and Sidebar for Mobile
+- ✅ Dynamic Filter Panel (visible only on mobile)
+- ✅ Product Cards with Stock Overlay
+- ✅ Animated Filter Toggle with Slide-In Effect
+- ✅ Modular Footer with Expand/Collapse Sections on Mobile
+- ✅ Accessibility-Focused HTML Structure
+
+---
+
+## 📱 Responsiveness & UI/UX
+
+- Built mobile-first using Flexbox and modern CSS techniques.
+- Adaptive layout with smooth UX transitions.
+- Visual feedback (hover, click effects, loading states).
+
+⚠️ **Note:** Best viewed in **light mode**. Dark themes may affect the visual fidelity due to design constraints.
+
+---
+
+## 🧩 Folder Structure
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+├── components/ // UI Components (Navbar, Filter, Footer)
+├── styles/ // CSS Modules
+├── pages/ // Next.js Pages (Home, etc.)
+└── public/assets/ // Static images and icons
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started Locally
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/ShivdasJadhav/Appscrip-task-ShivdasJadhav.git
+cd Appscrip-task-ShivdasJadhav
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🙋‍♂️ Author
+Shivdas Jadhav
+📧 jshivdas07@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/shivdas-jadhav-7b8096210/)
+💼 Passionate Full stack Developer with a focus on clean design, efficient, performant & scalable applications.

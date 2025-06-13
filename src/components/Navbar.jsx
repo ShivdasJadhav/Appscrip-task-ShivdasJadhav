@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { X } from "lucide-react"; // Lucide close icon
+import { X } from "lucide-react"; 
 import styles from "../styles/Navbar.module.css";
 
 function Navbar({ isOpen, onClose }) {

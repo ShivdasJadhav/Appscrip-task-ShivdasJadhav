@@ -19,7 +19,6 @@
   gap: 0.5rem;
 }
 
-/* Group wrapper for hamburger and logo */
 .leftGroup {
   display: flex;
   align-items: center;
@@ -27,7 +26,6 @@
   z-index: 1;
 }
 
-/* Hamburger styles */
 .hamburger {
   background: none;
   border: none;
@@ -35,7 +33,6 @@
   display: none;
 }
 
-/* Show hamburger on mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -48,7 +45,6 @@
   flex-shrink: 0;
 }
 
-/* Centered LOGO text */
 .centerText {
   position: absolute;
   left: 50%;
@@ -87,9 +83,6 @@
   font-size: 0.8rem;
 }
 
-/* ---------------------- */
-/* ✅ Responsive Rules */
-/* ---------------------- */
 
 @media (max-width: 768px) {
   .banner {
@@ -119,9 +112,8 @@
     font-size: 0.7rem;
   }
 
-  /* ❌ Hide Profile and Language on mobile */
-  .banner ul li:nth-child(4), /* Profile Icon */
-  .banner ul li:nth-child(5)  /* Language Dropdown */ {
+  .banner ul li:nth-child(4), 
+  .banner ul li:nth-child(5)   {
     display: none;
   }
 }

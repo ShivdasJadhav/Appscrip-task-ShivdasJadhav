@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import FilterClientWrapper from "@/components/filters/FilterClientWrapper"; // <- only this part is client
+import FilterClientWrapper from "@/components/filters/FilterClientWrapper"; 
 import Products from "@/components/product/Products";
 import styles from "@/styles/Main.module.css";
 

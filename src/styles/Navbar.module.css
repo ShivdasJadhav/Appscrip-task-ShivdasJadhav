@@ -9,7 +9,6 @@
 .closeBtn {
   display: none;
 }
-/* Desktop: default flex row */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

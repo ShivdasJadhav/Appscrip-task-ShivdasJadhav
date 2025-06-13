@@ -20,7 +20,6 @@
   min-width: 220px;
 }
 
-/* Show only first label on mobile */
 .label:nth-child(n + 2) {
   display: none;
 }

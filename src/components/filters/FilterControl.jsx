@@ -4,14 +4,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 function FilterControl({ showFilter, setShowFilter }) {
   return (
     <div className={styles.container}>
-      {/* only visible on mobile screens, onclick, show filter */}
       <button
         className={styles.triggerfilter}
         onClick={() => setShowFilter(!showFilter)}
       >
         Filter
       </button>
-      {/* only visible on desktop screens */}
       <div className={styles.info}>
         <h4>120 Items</h4>
         {showFilter ? (
@@ -35,7 +33,6 @@ function FilterControl({ showFilter, setShowFilter }) {
         )}
       </div>
       <p className={styles.divider}></p>
-      {/* filter by dropdown,visible on both */}
       <select name="filter_by" id="group_filters">
         <option value="recommended">recommended</option>
         <option value="newest_first">newest first</option>

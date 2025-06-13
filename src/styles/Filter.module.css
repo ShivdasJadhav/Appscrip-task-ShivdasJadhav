@@ -1,9 +1,6 @@
-/* =============================== */
-/* 🧱 Base Styles (Desktop Default) */
-/* =============================== */
 .container {
-  grid-row: 2 / -1;       /* From second row to the end of the grid */
-  grid-column: 1;         /* Stay in the first column */
+  grid-row: 2 / -1;      
+  grid-column: 1;        
   width: 100%;
   padding: 2rem 0.5rem;
   display: flex;
@@ -32,9 +29,6 @@
   cursor: pointer;
 }
 
-/* ===================== */
-/* 📱 Mobile Slide Panel */
-/* ===================== */
 @media (max-width: 768px) {
   .mobileFilter {
     position: fixed;

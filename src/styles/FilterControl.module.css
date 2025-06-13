@@ -11,19 +11,16 @@
   border-right: 0;
 }
 
-/* ⬅️ Divider between info and dropdown */
 .divider {
   display: none;
 }
 
-/* ℹ️ Desktop-only info block with item count and show/hide filter */
 .info {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-/* ✨ Button inside .info */
 .info button {
   display: flex;
   align-items: center;
@@ -37,7 +34,6 @@
   font-size: 1rem;
 }
 
-/* ⬇️ Universal filter dropdown */
 .container select {
   padding: 0.5rem;
   border: none;
@@ -60,7 +56,6 @@
   cursor: pointer;
 }
 
-/* ✅ Mobile-only filter trigger */
 .triggerfilter {
   display: none;
   background: transparent;
@@ -72,16 +67,13 @@
   text-transform: uppercase;
 }
 
-/* --------------------------------- */
-/* 📱 Responsive Rules */
-/* --------------------------------- */
 @media (max-width: 768px) {
   .info {
-    display: none; /* Hide on mobile */
+    display: none; 
   }
 
   .triggerfilter {
-    display: block; /* Show only on mobile */
+    display: block; 
     width: 100%;
   }
 

@@ -5,13 +5,11 @@ import Image from "next/image";
 function Product({ product }) {
   return (
     <div className={styles.container}>
-      {/* out of stock */}
       {product.id === 2 && (
         <div className={styles.outOfStock}>
           <span>Out of Stock</span>
         </div>
       )}
-      {/* new product */}
       {product.id === 1 && (
         <div className={styles.badge}>
           <span>New Product</span>

@@ -160,7 +160,6 @@
   margin-top: 1rem;
 }
 
-/* ------------------ MOBILE RESPONSIVENESS ------------------ */
 
 @media screen and (max-width: 767px) {
   .container {
@@ -241,7 +240,6 @@
   }
 }
 
-/* ------------------ DESKTOP ONLY ------------------ */
 @media screen and (min-width: 768px) {
   .section {
     border-bottom: none;
@@ -265,7 +263,6 @@
     display: block !important;
   }
   .rowContact li::before {
-    /* remove the bullet */
     content: none;
   }
   .toggleIcon {

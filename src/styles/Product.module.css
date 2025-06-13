@@ -22,13 +22,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8); /* ✅ Semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.8); 
 }
 
 .outOfStock span {
   width: 100%;
   padding: 1rem 2rem;
-  background-color: var(--color-white); /* ✅ Fully opaque */
+  background-color: var(--color-white); 
   color: var(--color-black);
   font-weight: 600;
   font-size: 0.8rem;

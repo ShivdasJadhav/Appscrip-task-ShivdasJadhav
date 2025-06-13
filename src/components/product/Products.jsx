@@ -3,7 +3,7 @@ import styles from "@/styles/Products.module.css";
 
 async function getProducts() {
   const res = await fetch("https://fakestoreapi.com/products", {
-    cache: "no-store", // Ensures server-side fetching on every request
+    cache: "no-store", 
   });
   return res.json();
 }
