@@ -1,0 +1,274 @@
+.container {
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.container h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container p,
+.container li {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: lighter;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe {
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+}
+.form input {
+  width: 60%;
+  padding: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: none;
+}
+.form button {
+  padding: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-gray);
+  border: 1px solid var(--color-gray);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contact {
+  width: 100%;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.currencyDetails {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.contact li::before {
+  content: "◆";
+  color: var(--color-white);
+  margin-right: 8px;
+}
+
+.links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links ul li {
+  margin: 1rem 0;
+}
+
+.section {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.toggleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggleIcon {
+  width: 1rem;
+  height: 1rem;
+  color: white;
+}
+
+.sectionContent {
+  margin-top: 0.5rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.social img {
+  width: auto;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+.paymentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payment {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.payment img {
+  height: 2rem;
+  width: auto;
+}
+.socialIcons {
+  margin-top: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* ------------------ MOBILE RESPONSIVENESS ------------------ */
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+  .desktopOnly {
+    display: none;
+  }
+  .info {
+    flex-direction: column;
+  }
+
+  .form {
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-white);
+  }
+
+  .form input {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .contactDetails {
+    border-bottom: 2px solid var(--color-white);
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .rowContact li::before {
+    content: "◆";
+    color: var(--color-white);
+    margin-right: 8px;
+  }
+  .currency {
+    margin-top: 1rem;
+  }
+  .currencyDetails li {
+    list-style: none;
+  }
+  .rowContact {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .currency {
+    flex-wrap: wrap;
+  }
+
+  .section {
+    border-bottom: 1px solid var(--color-white);
+  }
+
+  .links {
+    flex-direction: column;
+  }
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .sectionContent {
+    display: none;
+  }
+
+  .sectionContent.open {
+    display: block;
+  }
+
+  .toggleIcon {
+    display: block;
+  }
+
+  .social div:nth-child(1) div,
+  .payment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+/* ------------------ DESKTOP ONLY ------------------ */
+@media screen and (min-width: 768px) {
+  .section {
+    border-bottom: none;
+  }
+  .mobileOnly {
+    display: none;
+  }
+  .form {
+    gap: 1rem;
+  }
+  .form input {
+    width: 60%;
+  }
+  .form button {
+    width: 30%;
+  }
+  .currencyDetails {
+    gap: 1rem;
+  }
+  .sectionContent {
+    display: block !important;
+  }
+  .rowContact li::before {
+    /* remove the bullet */
+    content: none;
+  }
+  .toggleIcon {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #EB4C6B;       /* Blue */
+  --color-primary-light: #587ab0;
+  --color-primary-dark: #1e3a8a;
+
+  /* Secondary Colors */
+  --color-secondary: #f97316;     /* Orange */
+  --color-secondary-dark: #c2410c;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #2d3340;
+
+  /* Alerts */
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-warning: #facc15;
+}

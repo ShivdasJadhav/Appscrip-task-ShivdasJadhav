@@ -1,0 +1,49 @@
+.page {
+}
+
+
+.content {
+  display: flex;
+}
+.main ol {
+}
+
+.main li:not(:last-of-type) {
+}
+
+.main code {
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+  }
+
+  a.secondary:hover {
+  }
+
+  .footer a:hover {
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+  }
+
+  .main {
+  }
+
+  .main ol {
+  }
+
+  a.secondary {
+  }
+
+  .footer {
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+  }
+}

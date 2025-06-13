@@ -1,0 +1,138 @@
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.banner {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Group wrapper for hamburger and logo */
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+/* Hamburger styles */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Centered LOGO text */
+.centerText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  margin: 0;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+.banner ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.8rem;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.banner ul img {
+  width: 1.2rem;
+  height: auto;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.language h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+/* ---------------------- */
+/* ✅ Responsive Rules */
+/* ---------------------- */
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+  }
+
+  .centerText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    z-index: 0;
+  }
+
+  .banner ul {
+    gap: 0.6rem;
+  }
+
+  .banner ul img {
+    width: 1rem;
+  }
+
+  .language h3 {
+    font-size: 0.7rem;
+  }
+
+  /* ❌ Hide Profile and Language on mobile */
+  .banner ul li:nth-child(4), /* Profile Icon */
+  .banner ul li:nth-child(5)  /* Language Dropdown */ {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .centerText {
+    font-size: 1.1rem;
+  }
+
+  .banner ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

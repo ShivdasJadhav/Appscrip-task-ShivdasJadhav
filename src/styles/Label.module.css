@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.label {
+  background-color: var(--color-black);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Show only first label on mobile */
+.label:nth-child(n + 2) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    justify-content: space-between;
+  }
+  .label {
+    display: flex;
+  }
+  .label:nth-child(n + 2) {
+    display: flex;
+  }
+}
